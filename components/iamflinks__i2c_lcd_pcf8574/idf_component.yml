@@ -1,0 +1,19 @@
+dependencies:
+  idf:
+    version: '>=4.4.0'
+description: I2C_LCD_PCF8574 I2C LCD driver
+documentation: https://github.com/iamflinks/i2c_lcd_pcf8574/tree/main/README.md
+files:
+  exclude:
+  - .gitignore
+issues: https://github.com/iamflinks/i2c_lcd_pcf8574/issues
+license: Apache
+maintainers:
+- Femi Olugbon <olugbonfemi@gmail.com>
+profiles:
+  default:
+    namespace: iamflinks
+    registry_url: https://components.espressif.com
+repository: https://github.com/iamflinks/i2c_lcd_pcf8574.git
+url: https://github.com/iamflinks/i2c_lcd_pcf8574
+version: 1.0.1

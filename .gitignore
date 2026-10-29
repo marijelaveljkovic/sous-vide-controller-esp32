@@ -1,0 +1,25 @@
+# Build output
+build/
+
+# ESP-IDF managed components (downloaded automatically using dependencies.lock)
+managed_components/
+
+# Configuration backups
+sdkconfig.old
+
+# WiFi credentials - never commit!
+main/wifi_credentials.h
+
+# Local editor and tool settings
+.vscode/
+.clangd
+.claude/
+
+# Python
+__pycache__/
+*.pyc
+
+# OS files
+Thumbs.db
+desktop.ini
+.DS_Store

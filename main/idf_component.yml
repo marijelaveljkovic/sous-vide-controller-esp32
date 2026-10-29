@@ -1,0 +1,9 @@
+dependencies:
+  espressif/ds18b20:
+    version: "*"
+  espressif/onewire_bus:
+    version: "*"
+  esp-idf-lib/encoder:
+    version: "3.0.2"
+  iamflinks/i2c_lcd_pcf8574:
+    version: "1.0.1"

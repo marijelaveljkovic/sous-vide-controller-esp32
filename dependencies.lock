@@ -1,0 +1,65 @@
+dependencies:
+  esp-idf-lib/encoder:
+    component_hash: 0ac3bb66deff664544512216b30b38f05c6c45f42329afb8f089d196a6c6d30c
+    dependencies: []
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    targets:
+    - esp32
+    - esp32c2
+    - esp32c3
+    - esp32c5
+    - esp32c6
+    - esp32c61
+    - esp32h2
+    - esp32p4
+    - esp32s2
+    - esp32s3
+    version: 3.0.2
+  espressif/ds18b20:
+    component_hash: 38022d0c39c08b1df3e77f95a3f9544251549a1fd9b6263357bf714026f4bb6b
+    dependencies:
+    - name: espressif/onewire_bus
+      registry_url: https://components.espressif.com
+      require: private
+      version: ^1.1.0
+    - matches:
+      - if: $CONFIG{DS18B20_SENSOR_HUB} == True
+      name: espressif/sensor_hub
+      registry_url: https://components.espressif.com
+      require: public
+      version: ^0.1.4
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    version: 0.4.0
+  espressif/onewire_bus:
+    component_hash: a85dc1ceb71fb87af77c57d5fd4e6f48a504de1fc2b83fc302ec0cea331d05ce
+    dependencies:
+    - name: idf
+      require: private
+      version: '>=5.0'
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    version: 1.1.1
+  iamflinks/i2c_lcd_pcf8574:
+    dependencies: []
+    source:
+      path: components/iamflinks__i2c_lcd_pcf8574
+      type: local
+    version: 1.0.1
+  idf:
+    source:
+      type: idf
+    version: 6.0.2
+direct_dependencies:
+- esp-idf-lib/encoder
+- espressif/ds18b20
+- espressif/onewire_bus
+- iamflinks/i2c_lcd_pcf8574
+- idf
+manifest_hash: 409a0f082fc437cf9a4bc5eab1be98c85f01cf7fcb71a123b1c231969c871ab1
+target: esp32c3
+version: 3.0.0
